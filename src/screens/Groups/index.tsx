@@ -31,6 +31,7 @@ export function Groups() {
         keyExtractor={item => item}
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={() => <ListEmpty message="Que tal cadastrar a primeira turma?" />}
+        showsVerticalScrollIndicator={false}
       />
 
       <Button
