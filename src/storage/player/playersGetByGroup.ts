@@ -7,7 +7,6 @@ export async function playersGetByGroup(group: string) {
     const storage = await AsyncStorage.getItem(`${PLAYER_COLLECTION}-${group}`);
 
     const players: PlayerStorageDTO[] = !!storage ? JSON.parse(storage) : [];
-    console.log(players.length);
 
     return players;
   } catch (error) {
